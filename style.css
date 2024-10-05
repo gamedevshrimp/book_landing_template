@@ -337,7 +337,7 @@ header .navbar {
 }
 
 .testimonials-section .swiper-slide-button:hover {
-	color: var(--primary-color);
+	color: var(--dark-color);
 }
 
 /* Testimonials Section Styles */
