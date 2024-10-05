@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitPage Template Documetation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <style>
+        :root {
+            /* Colors */
+            --white-color: #fff;
+            --dark-color: #1d3557;
+            --primary-color: #f1faee;
+            --secondary-color: #e63946;
+            --light-pink-color: #f5f5f7;
+            --medium-gray-color: #457b9d;
+
+            /* Font Size */
+            --font-size-s: 0.9rem;
+            --font-size-n: 1rem;
+            --font-size-m: 1.12rem;
+            --font-size-l: 1.5rem;
+            --font-size-xl: 2rem;
+            --font-size-xxl: 3rem;
+
+            /* Font Weight */
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+
+            /* Border Radius */
+            --border-radius-s: 8px;
+            --border-radius-m: 30px;
+            --border-radius-circle: 50%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            padding: 0px 5px 0px 5px;
+        }
+
+        pre {
+            margin: 0px;
+            padding: 10px 0px;
+            text-align: left;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            background-color: var(--light-pink-color);
+            border-radius: 10px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            color: darkslategrey;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+        }
+
+        .container {
+            width: 900px;
+            min-width: 500px;
+        }
+
+        .base-info {
+            /* place-self: center; */
+            display: flex;
+            background-color: var(--light-pink-color);
+            padding: 20px 30px;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>LitPage Template Documetation</h1>
+        <div class="base-info">
+            <div class="info-block">
+                <strong>
+                    Created: 05/10/2024<br>
+                    By: Evgenii Strostin<br>
+                    Email: <a href="mailto:youremail@yourdomain.com">gamedevshrimp@gmail.com</a>
+                </strong>
+            </div>
+            <div class="gratitude-block">
+                Thank you for purchasing my template.
+                If you have any questions that are beyond the scope of this help file,
+                please feel free to email me via my user page contact form
+                <a href="https://codecanyon.net/user/gamedevshrimp">here</a>.</p>
+            </div>
+        </div>
+        <h2 id="toc">Table of Contents</h2>
+        <ol>
+            <li><a href="#baseStructure">The basic structure of a project</a></li>
+            <li><a href="#colorChanges">Color and Font editing</a></li>
+            <li><a href="#producChanges">Product section editing</a></li>
+            <li><a href="#aboutChanges">About section editing</a></li>
+            <li><a href="#booksChanges">Books section editing</a></li>
+            <li><a href="#reviewChanges">Testimonials section editing</a></li>
+            <li><a href="#galleryChanges">Gallery section editing</a></li>
+        </ol>
+        <h2 id="baseStructure"><strong>The basic structure of a project</strong> - <a href="#toc">top</a></h3>
+            <p>
+                All page content is placed in a single file, <code>index.html</code>.
+            </p>
+            <p>Open it and find the <code>main</code> HTML tag. Inside this tag, you will find the main sections of the
+                page, such as:
+            <ul>
+                <li>Product</li>
+                <li>Books</li>
+                <li>Testimonials</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+            </p>
+            <p>
+                Feel free to adjust the order of these sections if needed. To reorder
+                the sections, simply copy the entire code of a section and paste it where you want it to appear.
+            </p>
+            <pre><code class="language-html">
+    &lt;main&gt;
+        &lt;!-- Product Section --&gt;
+        &lt;section class=&quot;product-section&quot;&gt;
+        &lt;/section&gt;
+        
+        &lt;!-- Books Section --&gt;
+        &lt;section class=&quot;book-section&quot; id=&quot;portfolio&quot;&gt;
+        &lt;/section&gt;
+        
+        &lt;!-- Testimonials Section--&gt;
+        &lt;section class=&quot;testimonials-section&quot; id=&quot;testimonials&quot;&gt;
+        &lt;/section&gt;
+        
+        &lt;!-- Gallery Section--&gt;
+        &lt;section class=&quot;gallery-section&quot; id=&quot;gallery&quot;&gt;
+        &lt;/section&gt;
+        
+        &lt;!-- Contact Section--&gt;
+        &lt;section class=&quot;contact-section&quot; id=&quot;contact&quot;&gt;
+        &lt;/section&gt;
+        &lt;!-- Footer Section--&gt;
+        &lt;footer class=&quot;footer-section&quot;&gt;
+        &lt;/footer&gt;
+    &lt;/main&gt;
+</code>
+</pre>
+            <h2 id="colorChanges"><strong>Color and Font changing</strong> - <a href="#toc">top</a></h2>
+
+            <p>
+                All color and font settings are placed at the top of the <code class="language-html">style.css</code>
+                file.
+                You can go there and check the <code class="language-html">:root</code> tag for all the customizable
+                variables.
+            </p>
+            <pre><code class="language-css">
+    :root {
+    /* Colors */
+    --white-color: #fff;
+    --dark-color: #1d3557;
+    --primary-color: #f1faee;
+    --secondary-color: #e63946;
+    --light-pink-color: #f5f5f7;
+    --medium-gray-color: #457b9d;
+    
+    /* Font Size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 3rem;
+    
+    /* Font Weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Border Radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+    
+    /* Site Max Width */
+    --site-max-width: 1300px;
+    }
+</code>
+</pre>
+            <h2 id="producChanges"><strong>Product section editing</strong> - <a href="#toc">top</a></h2>
+            <p> The <strong>Product section</strong> is the first section that users will see on your site.
+                To replace the product image, upload your picture to the <code class="language-html">./images</code>
+                folder.
+            </p>
+            <p> Then, edit the image path inside the <code class="language-html">div</code> with the <code
+                    class="language-html">product-image-wrapper</code> class attribute.
+            </p>
+            <p> To change the text in this section, locate the <code class="language-html">div</code> with the
+                <code class="language-html">product-details</code> class.
+            </p>
+            <p> Here, you will find the <code class="language-html">title</code>, <code
+                    class="language-html">subtitle</code>,
+                and <code class="language-html">description</code> blocks. Feel free to update them as needed.
+            </p>
+            <pre><code class="language-html">
+    &lt;section class=&quot;product-section&quot;&gt;
+        &lt;div class=&quot;section-content&quot;&gt;
+            &lt;div class=&quot;product-details&quot;&gt;
+                &lt;h2 class=&quot;title&quot;&gt;LitPage&lt;/h2&gt;
+                &lt;h3 class=&quot;subtitle&quot;&gt;Launch your book with a polished web solution.
+                &lt;/h3&gt;
+                &lt;p class=&quot;description&quot;&gt;
+                LitPage – is specifically designed for authors who want to
+                effectively market their books online.
+                &lt;/p&gt;
+                &lt;div class=&quot;buttons&quot;&gt;
+                    &lt;a href=&quot;https://themeforest.net/&quot; class=&quot;button order-now&quot;&gt;Order Now&lt;/a&gt;
+                    &lt;a href=&quot;#contact&quot; class=&quot;button contact-us&quot;&gt;Contact Us&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;product-image-wrapper&quot;&gt;
+                &lt;img src=&quot;./images/book_product_photo.png&quot; alt=&quot;Hero&quot; class=&quot;product-image&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+                </code></pre>
+
+            <h2 id="aboutChanges"><strong>About Section Editing</strong> - <a href="#toc">top</a></h2>
+            <p>
+                The <strong>About section</strong> is a great place to share information about the author.
+                You can upload your photo to the <code class="language-html">./images</code> folder.
+            </p>
+            <p> Then, find the <code class="language-html">
+                    &lt;div class=&quot;about-image-wrapper&quot;&gt;
+                </code>
+                and update the image path with your photo.
+            </p>
+            <p> To change the text in this section, locate the <code class="language-html">
+                    &lt;div class=&quot;about-details&quot;&gt;
+                </code>` and replace it with your own content.
+            </p>
+            <pre><code class="language-html">
+                    &lt;section class=&quot;product-section&quot;&gt;
+                        &lt;div class=&quot;section-content&quot;&gt;
+                            &lt;div class=&quot;product-details&quot;&gt;
+                                &lt;h2 class=&quot;title&quot;&gt;LitPage&lt;/h2&gt;
+                                &lt;h3 class=&quot;subtitle&quot;&gt;Launch your book with a polished web solution.
+                                &lt;/h3&gt;
+                                &lt;p class=&quot;description&quot;&gt;
+                                LitPage – is specifically designed for authors who want to
+                                effectively market their books online.
+                                &lt;/p&gt;
+                                &lt;div class=&quot;buttons&quot;&gt;
+                                    &lt;a href=&quot;https://themeforest.net/&quot; class=&quot;button order-now&quot;&gt;Order Now&lt;/a&gt;
+                                    &lt;a href=&quot;#contact&quot; class=&quot;button contact-us&quot;&gt;Contact Us&lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;product-image-wrapper&quot;&gt;
+                                &lt;img src=&quot;./images/book_product_photo.png&quot; alt=&quot;Hero&quot; class=&quot;product-image&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                                </code></pre>
+
+            <h2 id="booksChanges"><strong>Books Section Editing</strong> - <a href="#toc">top</a></h2>
+            <p> The <strong>Books section</strong> is where you can add links to your other books. First, upload the
+                covers of your
+                books to the <code class="language-html">./images</code> folder. </p>
+            <p> Then, locate the <code class="language-html">&lt;li class=&quot;book-item&quot;&gt;</code> tag and
+                update the
+                image path. </p>
+            <p> You can also modify the text of the description inside the same <code class="language-html">li</code>
+                tag. </p>
+            <pre><code class="language-html"> 
+    &lt;li class=&quot;book-item&quot;&gt; 
+        &lt;img src=&quot;./images/book_17.png&quot; alt=&quot;&quot; class=&quot;menu-image&quot;&gt; 
+        &lt;h3 class=&quot;name&quot;&gt;Another Book Item&lt;/h3&gt; 
+        &lt;p class=&quot;text&quot;&gt; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        &lt;/p&gt; 
+    &lt;/li&gt; 
+            </code></pre>
+
+            <h2 id="reviewChanges"><strong>Testimonials Section Editing</strong> - <a href="#toc">top</a></h2>
+            <p> The <strong>Testimonials section</strong> is where you can showcase reviews or feedback from readers. To
+                add new
+                testimonial images, upload them to the `<code class="language-html">./images</code>` folder. </p>
+            <p> Then, locate the `<code class="language-html">&lt;li class=&quot;testimonial-item&quot;&gt;</code>` tag
+                and update
+                the image path. </p>
+            <p> You can also edit the testimonial text within the same `<code class="language-html">li</code>` tag. </p>
+            <pre><code class="language-html">
+    &lt;li class=&quot;book-item&quot;&gt;
+        &lt;img src=&quot;./images/book_17.png&quot; alt=&quot;&quot; class=&quot;menu-image&quot;&gt;
+        &lt;h3 class=&quot;name&quot;&gt;Another Book Item&lt;/h3&gt;
+        &lt;p class=&quot;text&quot;&gt;
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+        &lt;/p&gt;
+    &lt;/li&gt;
+            </code></pre>
+
+            <h2 id="galleryChanges"><strong>Gallery Section Editing</strong> - <a href="#toc">top</a></h2>
+            <p> The <strong>Gallery section</strong> does not contain editable text. However, you can always add your
+                images to the
+                <code class="language-html">./images</code> folder.
+            </p>
+            <p> Then, update the image path in the <code
+                    class="language-html">&lt;li class=&quot;gallery-item&quot;&gt;</code>
+                tag. </p>
+            <p> You can also edit the image captions (if any) within the same <code class="language-html">li</code> tag.
+            </p>
+            <pre><code class="language-html">
+    &lt;li class=&quot;gallery-item&quot;&gt;
+        &lt;img src=&quot;./images/photo_1.jpeg&quot; alt=&quot;#&quot; class=&quot;gallery-image&quot;&gt;
+    &lt;/li&gt;
+            </code></pre>
+    </div>
+</body>
+
+</html>
