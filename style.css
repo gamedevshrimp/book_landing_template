@@ -423,15 +423,16 @@ header .navbar {
 	margin-top: 8px;
 	color: var(--white-color);
 	background: var(--secondary-color);
+	border: 2px solid var(--primary-color);
 	border-radius: var(--border-radius-m);
 	font-weight: var(--font-weight-medium);
 	font-size: var(--font-size-m);
-	border: 1px solid var(--primary-color);
 	transition: 0.5s ease;
 }
 
 .contact-section .contact-form .submit-button:hover {
-	color: var(--primary-color);
+	color: var(--secondary-color);
+	border-color: var(--secondary-color);
 	background: transparent;
 }
 
